@@ -51,7 +51,6 @@ async def on_ready():
 
 @bot.command()
 async def setup(ctx):
-    await ctx.message.delete()
     await ctx.send('\U0001f4cb 退勤報告\n下のボタンを押してください', view=TaikinView())
 
 
