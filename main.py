@@ -43,8 +43,9 @@ class TaikinButton(Button):
                 f'— {self.member_name}'
             )
 
-        message = await interaction.channel.send(content)
-        await message.add_reaction('✅')
+        message = await interaction.channel.send(content, view=TaikinView())
+　　　　 await message.add_reaction('❤️‍🔥')
+
 
 
 class TaikinView(View):
